@@ -407,7 +407,8 @@ class TestMailNotificationWithSubject extends Notification
     {
         return (new MailMessage)
             ->subject('mail custom subject')
-            ->line('The introduction to the notification.');
+            ->line('The introduction to the notification.')
+            ->line(null);
     }
 }
 
